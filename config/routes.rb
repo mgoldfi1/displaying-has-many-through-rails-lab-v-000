@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'patient/name:string'
+
+  get 'patient/age:integer'
+
   resources :doctors
   resources :patients
   resources :appointments, only: [:show]
