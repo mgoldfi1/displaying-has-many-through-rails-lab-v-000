@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180822163419) do
+ActiveRecord::Schema.define(version: 20180822163921) do
 
   create_table "appointments", force: :cascade do |t|
-    t.string  "appointment_datetime"
-    t.integer "doctor_id"
-    t.integer "patient_id"
+    t.datetime "appointment_datetime"
+    t.integer  "doctor_id"
+    t.integer  "patient_id"
   end
 
   add_index "appointments", ["doctor_id"], name: "index_appointments_on_doctor_id"
