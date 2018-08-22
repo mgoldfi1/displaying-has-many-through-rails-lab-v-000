@@ -1,0 +1,3 @@
+<%Patient.all.each do |t|%>
+  <%=t.name%> - <%=pluralize(t.appointments.count, "appointment")%>
+  <%end%>
