@@ -1,4 +1,6 @@
 class ChangeAppointmentDateTimeBack < ActiveRecord::Migration
   def change
-  end
+      change_column :appointments, :appointment_datetime, :string
+    end
+  
 end
